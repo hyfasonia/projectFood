@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block title %}Sign Up {% endblock %}
+
+{% block content %}
+    
+        <div class="row border rounded-3 p-3 bg-white shadow box-area ">
+            
+                <div class="text-center pt-5 pb-2">
+                    <h1 style="font-family: Arial, Helvetica, sans-serif;"><strong>Recipe Realm</strong></h1>
+                </div>
+                <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left box">
+                    <div class="featured-image mb-3">
+                        <img src="/static/chef2.jpg" alt="chef" class="img-fluid" style="width: 250px; height: 250px;">
+                    </div>
+                    <p class="text-center fs-2" style="font-weight: 600; font-family: 'Times New Roman', Times, serif;">
+                        Let's get cooking!
+                    </p>
+                    <small class="text-muted text-wrap text-center"> 
+                        Allow us share with you the best recipes.
+                    </small>
+
+
+                </div>
+                <div class="col-md-6 right-box">
+                    <form action="" method="POST">
+                        <label> Username: </label>
+                        <div class="mb-2 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-person-circle"></i>
+            
+                            </span>
+                            <input type="username" name="username" class="form-control" id="username" placeholder="e.g mario12">
+                        </div>
+                        <label> Email: </label>
+                        <div class="mb-2 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-envelope-at"></i>
+            
+                            </span>
+                            <input type="email" name="email" class="form-control" id="email" placeholder="e.g mario@example.com">
+                        </div>
+                        <div class="text-justify">
+                            <label>Password: </label>
+                        </div>
+                        <div class="input-group mb-2">
+                            <span class="input-group-text">
+                                <i class="bi bi-file-lock2-fill"></i>
+            
+                            </span>
+                            <input type="password" id="password1" name="password1" class="form-control form-control-lg fs-6"><br>
+                        </div>
+                        <div class="text-justify">
+                            <label> Confirm Password: </label>
+                        </div>
+                        <div class="input-group mb-2 pb-2">
+                            <span class="input-group-text">
+                                <i class="bi bi-file-lock2-fill"></i>
+            
+                            </span>
+                            <input type="password" id="password2" name="password2" class="form-control form-control-lg fs-6"><br>
+                        </div>
+                        <div class="input-group mb-3 border-bottom border-secondary pb-5">
+                            <button type="submit" class="btn btn-lg btn-primary w-100 fs-6">Sign Up</button>
+                        </div>
+                        <!-- <div class="text-center">
+                            <p>Or sign up using</p>
+                        </div>
+                        <div class="btn-group mb-3 align-items-center ps-5 ms-5">
+                            <button class="btn btn-md ms-5 " ><img src="/static/google.jpg" alt="google" style="width: 30px;"></button>
+                            <button class="btn btn-md me-5" ><img src="/static/facebook.jpg" alt="facebook" style="width: 30px;"></button>
+                
+                        </div> -->
+                    
+                    
+                    </form>
+
+
+                </div>
+        </div>
+    
+    
+
+{%endblock%}
